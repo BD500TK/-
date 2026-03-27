@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Income System</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('https://images.unsplash.com/photo-1554224155-6726b3ff858f') no-repeat center/cover;
+  color: #fff;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.75);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  color: #ff4b2b;
+}
+
+.card {
+  background: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.price {
+  color: green;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.btn {
+  display: block;
+  background: #25D366;
+  color: #fff;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.timer {
+  color: yellow;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.trust {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.testimonial {
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  color: #000;
+}
+
+.footer {
+  font-size: 11px;
+  margin-top: 20px;
+  opacity: 0.7;
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+<div class="container">
+
+<h1>💻 Online Income System</h1>
+<p>Learn Freelancing + YouTube + AI Tools</p>
+
+<div class="timer">
+⏳ Offer ends in: <span id="countdown"></span>
+</div>
+
+<div class="card">
+
+<p class="price">🔥 Only 100৳</p>
+
+<p>Payment: bKash / Nagad</p>
+<p>01920245650</p>
+
+<a class="btn" href="https://wa.me/8801920245650">📩 Send Payment Screenshot</a>
+
+<div class="trust">
+✅ 500+ মানুষ ইতিমধ্যে নিয়েছে <br>
+✅ Beginner Friendly <br>
+✅ Instant Access
+</div>
+
+</div>
+
+<div class="testimonial">
+⭐ “আমি ৭ দিনের মধ্যে প্রথম earning পাই!” – Rahim  
+</div>
+
+<div class="testimonial">
+⭐ “Very সহজ system, beginners এর জন্য perfect” – Karim  
+</div>
+
+<div class="footer">
+⚠️ This is a digital learning guide. Results depend on your effort.
+</div>
+
+</div>
+</div>
+
+<script>
+// Countdown Timer
+var countDownDate = new Date().getTime() + (5 * 60 * 60 * 1000);
+
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+
+  var hours = Math.floor((distance / (1000 * 60 * 60)));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("countdown").innerHTML =
+  hours + "h " + minutes + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "Expired";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
